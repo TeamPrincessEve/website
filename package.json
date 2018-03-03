@@ -1,0 +1,19 @@
+{
+  "name": "Team Princess Eve website",
+  "version": "1.0.0",
+  "description": "Team Princess Eve website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamPrincessEve/website.git"
+  },
+  "author": "https://github.com/PrincessEve",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/TeamPrincessEve/website/issues"
+  },
+  "homepage": "https://github.com/TeamPrincessEve/website#readme"
+}
