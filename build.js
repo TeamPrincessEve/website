@@ -11,8 +11,8 @@ Metalsmith(__dirname)
     url: "http://www.metalsmith.io/"
   })
   .source('./src')
-  .destination('./build')
-  .clean(false)
+  .destination('./public')
+  .clean(true)
   .use(markdown())
   .use(permalinks())
   .use(layouts({
