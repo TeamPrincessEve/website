@@ -4,13 +4,10 @@
   "description": "Team Princess Eve website",
   "main": "index.js",
   "scripts": {
-    "sass-bootstrap": "node_modules/.bin/node-sass --output-style expanded src/sass/bootstrap.scss > src/css/bootstrap.css && node_modules/.bin/node-sass --output-style compressed src/sass/bootstrap.scss src/css/bootstrap.min.css",
-    "sass-style": "node_modules/.bin/node-sass --output-style expanded src/sass/style.scss > src/css/style.css && node_modules/.bin/node-sass --output-style compressed src/sass/style.scss src/css/style.min.css",
-    "sass": "npm run sass-bootstrap && npm run sass-style",
-    "sass-watch": "node_modules/.bin/node-sass --output-style compressed --watch src/sass/page.sass src/css/page.min.css",
-    "build": "npm run sass && NODE_ENV=development node build",
-    "build-prod": "npm run sass && NODE_ENV=production node build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "NODE_ENV=development node build",
+    "build-prod": "NODE_ENV=production node build",
+    "serve": "firebase serve -p 8080 -o 0.0.0.0",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
