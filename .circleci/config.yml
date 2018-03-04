@@ -33,7 +33,11 @@ jobs:
       
       - run: npm install
       
-      - run: npm rebuild node-sass --force
+      - run: node_modules/.bin/node-sass --version
+      
+    #   - run: npm rebuild node-sass --force
+
+    #   - run: node_modules/.bin/node-sass --version
       
       - save_cache:
           paths:
