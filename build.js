@@ -11,12 +11,10 @@ Metalsmith(__dirname)
     url: "http://www.metalsmith.io/"
   })
   .source('./src')
-  .destination('./public')
-  .clean(true)
+  .destination('./build')
+  .clean(false)
   .use(markdown())
-  .use(permalinks({
-    relative: false
-  }))
+  .use(permalinks())
   .use(layouts({
     engine: 'handlebars'
   }))
