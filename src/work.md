@@ -1,5 +1,6 @@
 ---
-layout: index.hbs
+layout: work.hbs
+permalink: false
 ---
 
 <h2>Read what I have to say</h2>
