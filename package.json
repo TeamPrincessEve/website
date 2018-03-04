@@ -1,9 +1,15 @@
 {
-  "name": "Team Princess Eve website",
+  "name": "website",
   "version": "1.0.0",
   "description": "Team Princess Eve website",
   "main": "index.js",
   "scripts": {
+    "sass-bootstrap": "node_modules/.bin/node-sass --output-style expanded src/sass/bootstrap.scss > src/css/bootstrap.css && node_modules/.bin/node-sass --output-style compressed src/sass/bootstrap.scss src/css/bootstrap.min.css",
+    "sass-style": "node_modules/.bin/node-sass --output-style expanded src/sass/style.scss > src/css/style.css && node_modules/.bin/node-sass --output-style compressed src/sass/style.scss src/css/style.min.css",
+    "sass": "npm run sass-bootstrap && npm run sass-style",
+    "sass-watch": "node_modules/.bin/node-sass --output-style compressed --watch src/sass/page.sass src/css/page.min.css",
+    "build": "npm run sass && NODE_ENV=development node build",
+    "build-prod": "npm run sass && NODE_ENV=production node build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/TeamPrincessEve/website/issues"
   },
-  "homepage": "https://github.com/TeamPrincessEve/website#readme"
+  "homepage": "https://github.com/TeamPrincessEve/website#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.11",
+    "metalsmith": "^2.3.0",
+    "metalsmith-layouts": "^2.1.0",
+    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-permalinks": "^0.5.0",
+    "node-sass": "^4.7.2"
+  }
 }
