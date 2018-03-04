@@ -14,7 +14,7 @@
     "url": "git+https://github.com/TeamPrincessEve/website.git"
   },
   "author": "https://github.com/PrincessEve",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/TeamPrincessEve/website/issues"
   },
@@ -28,5 +28,6 @@
     "metalsmith-markdown": "^0.2.2",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-sass": "^1.5.1"
-  }
+  },
+  "dependencies": {}
 }
