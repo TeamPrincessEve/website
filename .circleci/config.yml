@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:6.11.5
+      - image: circleci/node:9-stretch
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -30,8 +30,6 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      
-      - run: lsb_release -a
       
       - run: npm install
       
